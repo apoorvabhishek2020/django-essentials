@@ -1,3 +1,9 @@
-from django.shortcuts import render
+"""
+Views for Home App.
+"""
+from django.http import HttpResponse
 
-# Create your views here.
+
+def home(request):
+    """Home Page for the app."""
+    return HttpResponse('Hello, World!')
